@@ -1,4 +1,5 @@
 JavaScript:
+	JavaScript is a versatile programming language primarily used for web development. It runs in the browser and is often used to make websites interactive.
 	Client-side programming languages
 	Written code get executed in brouser with help on JavaScript Engine.
 	JavaScript has reach set of libraries & frame-works for front-end and back-end.
@@ -21,7 +22,7 @@ JavaScript variables:
 		var a="kiram";
 		console.log(a);
 		
-	2) et: can be assign multiple times but not allowed to re-define.
+	2) let: can be assign multiple times but not allowed to re-define.
 		let a ="ravi";
 		console.log(a);
 		// let a="kiran"; ----> Error
@@ -248,6 +249,35 @@ Functions
 		}
 	
 		wish();
+
+-----------------------------------------	
+1) Function Expression
+2) Anonymous Functions
+3) Functions with parameters and Return values
+
+Example:
+	var a=function wishMe()
+	  {
+		document.write("Good Day!");
+	  }
+
+	wishMe();//no output
+	a();
+	
+Example:
+	var b =function()
+		{
+			document.write(This is anonymous function");
+		}
+	b();
+
+function add(a,b)
+{
+	return a+b;
+}	
+
+results=add(10,20);
+document.write("Results"+results);
 -----------------------------------------		
 Scopes in javascript:
 	1) Global Scope
@@ -288,34 +318,6 @@ Scopes in javascript:
 	
 	fruit();
 	document.write(x);//error
------------------------------------------	
-1) Function Expression
-2) Anonymous Functions
-3) Functions with parameters and Return values
-
-Example:
-	var a=function wishMe()
-	  {
-		document.write("Good Day!");
-	  }
-
-	wishMe();//no output
-	a();
-	
-Example:
-	var b =function()
-		{
-			document.write(This is anonymous function");
-		}
-	b();
-
-function add(a,b)
-{
-	return a+b;
-}	
-
-results=add(10,20);
-document.write("Results"+results);
 -----------------------------------------
 Methods in JavaScript:
 1) Arrays Methods: Dot notation
@@ -374,7 +376,6 @@ Methods in JavaScript:
 		let myNewNumbers1=myNumbers.splice(4,0,"starts in sky");-----------from 4th index to next 0 elements remove and add "starts in sky" 
 						  myNumbers------------------
 						  myNewNumbers1-----------10,20,30,40,starts in sky,50,60,70,80
-
 						  
 		document.write(myNumbers);
 		
