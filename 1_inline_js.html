@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript</title>
+
+</head>
+
+<body>
+    <button onclick="changeContent()">Click Me</button>
+    <p id="demo">Hello!</p>
+
+    <!-- inline JavaScript code -->
+    <script>
+        function changeContent() {
+            document.getElementById("demo").innerHTML = "Congratulations! You’ve learned how to change content with JavaScript!";
+        }
+    </script>
+</body>
+
+</html>
