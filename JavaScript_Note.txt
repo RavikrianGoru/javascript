@@ -1,0 +1,398 @@
+JavaScript:
+	Client-side programming languages
+	Written code get executed in brouser with help on JavaScript Engine.
+	JavaScript has reach set of libraries & frame-works for front-end and back-end.
+	1) Frontend
+		react
+		angular....
+	2) Backend
+		node Js
+		express js
+		next js...
+		
+I) In-line java script
+II) External JavaScript
+	
+	
+JavaScript variables:
+	1) var : can be defined and assign multiple times. 
+		var a="ravi";
+		console.log(a);
+		var a="kiram";
+		console.log(a);
+		
+	2) et: can be assign multiple times but not allowed to re-define.
+		let a ="ravi";
+		console.log(a);
+		// let a="kiran"; ----> Error
+		a="kiran";
+		console.log(a);
+		
+	3) const:can be define and assign only once.
+	const a="ravi";
+	//const a="kiran"; ----> Error
+	//a="kiran"; ----> Error
+	
+Data types:
+	
+	Primitive Datatypes	
+		1) String
+			var a="ravi";
+		2) Number
+			var a=10;
+			var b=10.0;
+		3) Boolean
+			var a=true;
+			var b=false;
+			var test=10>20;
+		4) Null
+			let a=null;
+		5)Undefined
+			let a;
+	Complex Datatypes	
+		6)Arrya		[]
+			let fruites=["apple", "mango", 55, {name:"ravi"} ];
+			console.log(fruites);
+			
+		7)Object	{}
+			const games={
+				cricket:"Ravi",
+				football:"Kiran"
+				}
+			console.log(games);
+*** console.log(typeof games); console.log(typeof fruites);-------------- return Object, everything in javascript : objects
+*** console.log(Array.isArray(fruites)):----true
+
+Operators:
+	Arithmetic:
+		1) Addition: +
+			var a=30;
+			var b=20;
+			document.write("Addition",a+b);
+		2) Subtraction: -
+			var a=30;
+			var b=20;
+			document.write("Subtraction",a-b);
+		3) Multiplication: 
+		document.write("Multiplication",a*b);
+		4) Division: 
+		document.write("Division",a/b);
+		5) Modulus/Remainder: 
+		document.write("Modulus",a%b);
+		6) Increment: 
+		a++;
+		document.write("Increment",a);
+		7) Decrement: 
+		a--;
+		document.write("Decrement",a);
+		
+		8) equality ==
+		9) not equal !==
+		10) greater than>
+		11) less than <
+		12) logical Not !
+		13) logical AND &&
+		14) logical OR ||
+		
+
+Control flow / conditions
+	1) if
+	Ex:
+		var game="cricket";
+		let captain="ravi";
+		if(game == "cricket")
+		{
+			document.write("Matche captain is",captain);
+		}
+		
+	2) if-else
+		var game="cricket";
+		let captain="ravi";
+		if(game == "Cricket")
+		{
+			document.write("Matche captain is",captain);
+		}else
+		{
+			document.write("Sorry wront ans");
+		}
+
+	3) if else-if
+		var x=10;
+		var y=20;
+		var z=30;
+		
+		if(x==y)
+		{
+			document.write("x==y");
+		}else if(x>y)
+		{
+			document.write("x>y");
+		}else if(y>z)
+		{
+			document.write("y>z");
+		}else if(x!==y)
+		{
+			document.write("x!==y");
+		}else
+		{
+			document.write("No condition met");
+		}
+	4) switch
+		var x=10;
+		var y=20;
+		var z=30;
+		
+Ternary operator:
+	condition=true?"true statement":"false statement";
+	document.write( 
+			((2+3) == 5)? "Yes correct":"No wrong");
+			
+Dailog Box:
+	1) alert
+		alert("Something");
+	2) prompt
+		prompt("Something);
+	3) confirm
+	
+		var areYouSure=confirm("Are you sure?");
+		document.write(areYouSure);-------->true or false
+Type conversions:
+	1) typeof
+		var a="55";
+		var b=44;
+		document.write(typeof a);----------->string
+		document.write(typeof b);----------->number
+		
+		var z=parseInt(a);
+		document.write(typeof z);----------->number
+		
+		var x=string(b);
+		document.write(typeof x);----------->string
+-----------------------------------------		
+switch-case statements:
+	
+	1) Syntax:
+		switch(expresssion)
+		{
+			case value1:
+						statements;
+						break;
+			case value2:
+						statements;
+						break;
+			case value3:
+						statements;
+						break;
+			default:
+						statements;
+						break;
+		}
+	
+Example:1
+		
+	var a=100;
+	
+	switch(a)
+	{
+		case 5:
+				document.write("a value is 5");
+				break;
+		case a<10:
+				document.write("a < 10");
+				break;
+		case a>10:
+				document.write("a > 10");
+				break;
+		default:
+				document.write("no condition met");
+				break;
+	}
+		
+---------------------
+	let name= prompt("Please enter your name");
+	let marks = prompt("Enter your marks");
+	
+	switch(true)
+	{
+		case marks>90 && marks<=100:
+			results="Great! Topper");
+			break;
+		case marks>65 && marks<=90:
+			results="Great! 1st class");
+			break;
+		case marks>40 && marks<=65:
+			results="Great! 2nd class");
+			break;
+		case marks>0 && marks<=40:
+			results="No Problem, try next time!");
+			break;
+		default:
+			results="Invalid marks";
+			break;
+	}
+	document.write("Hello "+ name +","+ results);
+---------------------
+Functions
+	Syntax function definition:
+		function functionName()
+		{
+			statements
+		}
+	Syntax function calling:
+		functionName();
+	
+	Example-1:
+		function wish()
+		{
+			alert("Hello, Good Day!");
+		}
+	
+		wish();
+-----------------------------------------		
+Scopes in javascript:
+	1) Global Scope
+	2) Function Scope
+	3) Block scope
+	
+	
+	//global scope
+	var apple="red";
+	let orange="yellow";
+	const banana="green";
+	
+	function fruit()
+	{
+		//function scope
+		var x =100;
+		let y =200;
+		const z=300;
+		
+		document.write(apple);
+		document.write(x);
+		
+		if(x<y)
+		{
+			//block scope with let,const
+			let a=10;
+			const b=10;
+			var c=20;
+			
+			document.write(a);
+			document.write(b);
+			document.write(c);
+		}
+		document.write(c);//no error : limitation of block scope with var 
+		document.write(a);//error
+		document.write(b);//error
+	}
+	
+	fruit();
+	document.write(x);//error
+-----------------------------------------	
+1) Function Expression
+2) Anonymous Functions
+3) Functions with parameters and Return values
+
+Example:
+	var a=function wishMe()
+	  {
+		document.write("Good Day!");
+	  }
+
+	wishMe();//no output
+	a();
+	
+Example:
+	var b =function()
+		{
+			document.write(This is anonymous function");
+		}
+	b();
+
+function add(a,b)
+{
+	return a+b;
+}	
+
+results=add(10,20);
+document.write("Results"+results);
+-----------------------------------------
+Methods in JavaScript:
+1) Arrays Methods: Dot notation
+	
+	Example:
+		let collections=["Ravi", 35, true, {city:"hyd"}]
+
+	Array methods:
+	push(),pop(),shift(),unshift(),concate(),join(),slice(),splice(),indexOf(),forEach().
+		push(): adds an element at the end of array and returns the new lenght of array.
+			collections.push("hi");
+		
+		pop(): removes an element at the end of array and returns that element.
+			collections.pop();
+		
+		shift():removes 1st element of array and returns that element.
+			collections.shift();
+		
+		unshift(): adds one or more elements to the starting of the array and returns the new length
+			collections.unshift(10,20);
+		
+		document.write(collections);
+		document.write(collections.length);
+
+		concat(): Combines two or more arrays and returns a new array.
+		
+		let nums1=[1,2,3];
+		let nums2=[1,2,3];
+		let nums3=nums1.concat(nums2);
+		
+		join(): creates new string by concatenating all the elements of an array and return a string by a specified separator.
+		let allAsString=nums1.join(",");
+		
+		splice(startPoint,endPoint): return a shallow copy of a portition of an array into a new array.
+		let nums1=[1,2,3,"A","b","c"];
+		let n1s=nums1.slice(0,3);
+		
+		splice(): Changes the content of an array by removing, replacing, or adding elements.
+		let myNumbers=[10,20,30,40,50,60,70,80];
+		let myNewNumbers1=myNumbers.splice(0,4);-----------10,20,30,40 removed 0 to 3rd index data as mentioned 0 to 4.
+						  myNumbers------------------50,60,70,80
+						  myNewNumbers1=10,20,30,40
+		
+		let myNumbers=[10,20,30,40,50,60,70,80];		
+		let myNewNumbers1=myNumbers.splice(0,4,"something to see");-----------10,20,30,40 removed 0 to 3rd index data as mentioned 0 to 4 and replace by "somethig to see"
+						  myNumbers------------------"something to see", 50,60,70,80
+						  myNewNumbers1-----------10,20,30,40
+						  
+						  
+		let myNumbers=[10,20,30,40,50,60,70,80];
+		let myNewNumbers1=myNumbers.splice(4,1,"starts in sky");-----------from 4th index to next 1 elements remove and add "starts in sky" 
+						  myNumbers------------------50
+						  myNewNumbers1-----------10,20,30,40,starts in sky,60,70,80
+
+		let myNumbers=[10,20,30,40,50,60,70,80];
+		let myNewNumbers1=myNumbers.splice(4,0,"starts in sky");-----------from 4th index to next 0 elements remove and add "starts in sky" 
+						  myNumbers------------------
+						  myNewNumbers1-----------10,20,30,40,starts in sky,50,60,70,80
+
+						  
+		document.write(myNumbers);
+		
+	
+2) String Methods
+3) Object Methods
+	
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+	
+
+
