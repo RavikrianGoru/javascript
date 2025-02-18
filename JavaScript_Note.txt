@@ -419,6 +419,11 @@ Methods in JavaScript:
 	
 
 4) Loops:
+	for
+	while
+	do-while
+	forEach
+	for-in
 	
 	
 	
