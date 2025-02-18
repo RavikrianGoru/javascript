@@ -416,7 +416,6 @@ Methods in JavaScript:
 	split(), trim(), charAt(), subString(), replace(), toUpperCase(), toLowerCase()....
 
 3) Object Methods
-	
 
 4) Loops:
 	for
@@ -424,10 +423,42 @@ Methods in JavaScript:
 	do-while
 	forEach
 	for-in
+
+5) DOM Manipulation By Methods
+	getElementById()
+	getElementsByClassName()
+	getElementByTagName()
+
+	querySelector()
+	querySelectorAll()
+	setAttribute()
+	removeAttribute()
+
+6) DOM Manipulation By 	Properties
+	innerText
+	innerHTML
+	textContent
+	value
+	name
+	attribute
+	getAttribute
+	setAttribute
+
+* Difference between innerText, textContext
+  innerText: will consider existed css styles
+  textContext:will ignore existed css styles
 	
-	
-	
-	
+7) HTML Attributes
+	scr
+	id
+	class
+	style
+	alt
+	lang
+	dir
+	href
+	width & height
+		
 		
 		
 	

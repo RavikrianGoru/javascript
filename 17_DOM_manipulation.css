@@ -1,0 +1,26 @@
+/* Class Level Styles */
+.nav-left {
+    color: brown;
+}
+
+.nv-right {
+    color: rgb(94, 35, 204);
+}
+
+.nv-right p {
+    color: rgb(13, 13, 14);
+}
+
+.nv-down {
+    color: rgb(240, 8, 8);
+}
+
+.nv-down p {
+    color: rgb(13, 13, 14);
+}
+
+
+/* ID Level Styles */
+#companyId {
+    color: rgb(228, 10, 217);
+}
