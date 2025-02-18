@@ -320,7 +320,7 @@ Scopes in javascript:
 	document.write(x);//error
 -----------------------------------------
 Methods in JavaScript:
-1) Arrays Methods: Dot notation
+1a) Arrays Methods: Dot notation
 	
 	Example:
 		let collections=["Ravi", 35, true, {city:"hyd"}]
@@ -379,7 +379,21 @@ Methods in JavaScript:
 						  
 		document.write(myNumbers);
 		
-	
+		let myNumbers = [10, 20, 30, 40, 50, 60, 70, 80];
+		let idx = myNumbers.indexOf(50); ---------4
+
+		let myNumbers = [10, 20, 30, 40, 50, 60, 70, 80];
+    	myNumbers.forEach((item) => {
+        	document.write("<br/> ", item);
+    	});
+
+		myNumbers.forEach((item, index) => {
+        	document.write("<br/> index:", index, "-- element:", item);
+    	});
+
+1b) Multi-Dimensional Arrays
+
+
 2) String Methods
 3) Object Methods
 	
