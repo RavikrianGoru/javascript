@@ -413,9 +413,12 @@ Methods in JavaScript:
     )
 
 2) String Methods:
+	split(), trim(), charAt(), subString(), replace(), toUpperCase(), toLowerCase()....
 
 3) Object Methods
 	
+
+4) Loops:
 	
 	
 	
