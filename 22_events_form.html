@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events Example</title>
+    <style>
+        div {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            color: green;
+        }
+
+        form {
+            width: 300px;
+            margin: 20px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Form Event Demonstration</h1>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="India">India</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="submit">Form submit Event Output will appear here.</div>
+    <div id="change">Form change Event Output will appear here.</div>
+    <div id="focus">Form focus Event Output will appear here.</div>
+    <div id="blur">Form blur Event Output will appear here.</div>
+    <div id="input">Form input Event Output will appear here.</div>
+    <div id="reset">Form reset Event Output will appear here.</div>
+    <div id="select">Form select Event Output will appear here.</div>
+
+    <script src="22_events_form.js"></script>
+</body>
+
+</html>
