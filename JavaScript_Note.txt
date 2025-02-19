@@ -458,7 +458,121 @@ Methods in JavaScript:
 	dir
 	href
 	width & height
-		
+
+8) Events & Event Listeners:
+An event in JavaScript refers to any interaction or occurrence that happens in the browser.
+An event listener is a JavaScript function that "listens" for specific events and executes a function when that event occurs.
+
+Mouse Events:
+	click: Triggered when an element is clicked.
+	dblclick: Triggered when an element is double-clicked.
+	mouseover: Triggered when the mouse pointer enters an element.
+	mouseout: Triggered when the mouse pointer leaves an element.
+	mousemove: Triggered when the mouse moves within an element.
+	mouseenter: Triggered when the mouse pointer enters an element, does not bubble.
+	mouseleave: Triggered when the mouse pointer leaves an element, does not bubble.
+	mousedown: Triggered when a mouse button is pressed down on an element.
+	mouseup: Triggered when a mouse button is released on an element.
+	contextmenu: Triggered when the right mouse button is clicked (context menu).
+
+Keyboard Events:
+	keydown: Triggered when a key is pressed down.
+	keyup: Triggered when a key is released.
+	keypress: Triggered when a key is pressed and released (deprecated in modern browsers, use keydown and keyup).
+
+Form Events:
+	submit: Triggered when a form is submitted.
+	change: Triggered when the value of an input, select, or textarea element changes.
+	focus: Triggered when an element gains focus.
+	blur: Triggered when an element loses focus.
+	input: Triggered when the value of an input or textarea changes.
+	reset: Triggered when a form is reset.
+	select: Triggered when the user selects text inside an input or textarea field.
+
+Window Events:
+	load: Triggered when the document, an image, or other resource finishes loading.
+	resize: Triggered when the window is resized.
+	scroll: Triggered when the user scrolls the page or an element.
+	unload: Triggered when the document or window is being unloaded.
+	beforeunload: Triggered before the window is unloaded, can be used to prompt users for confirmation.
+	focus: Triggered when the window or document gains focus.
+	blur: Triggered when the window or document loses focus.
+
+Clipboard Events:
+	copy: Triggered when content is copied to the clipboard.
+	cut: Triggered when content is cut from the document.
+	paste: Triggered when content is pasted from the clipboard.
+
+Touch Events (for mobile devices):
+	touchstart: Triggered when the user touches the screen.
+	touchend: Triggered when the user removes their finger from the screen.
+	touchmove: Triggered when the user moves their finger across the screen.
+	touchcancel: Triggered when the touch event is interrupted.
+
+Pointer Events (for devices with a pointing device, like a mouse, pen, or touch):
+	pointerdown: Triggered when a pointing device button is pressed.
+	pointerup: Triggered when a pointing device button is released.
+	pointermove: Triggered when the pointing device moves.
+	pointerenter: Triggered when the pointer enters an element.
+	pointerleave: Triggered when the pointer leaves an element.
+	pointercancel: Triggered when the pointer event is canceled.
+
+Drag and Drop Events:
+	dragstart: Triggered when a drag operation starts.
+	dragend: Triggered when a drag operation ends.
+	dragenter: Triggered when a dragged item enters a valid drop target.
+	dragleave: Triggered when a dragged item leaves a valid drop target.
+	dragover: Triggered when an item is being dragged over a valid drop target.
+	drop: Triggered when the dragged item is dropped onto a valid drop target.
+
+Media Events:
+	play: Triggered when a media element starts playing.
+	pause: Triggered when a media element is paused.
+	ended: Triggered when the media element finishes playing.
+	volumechange: Triggered when the volume of a media element changes.
+	timeupdate: Triggered as the media element’s playback position changes.
+	progress: Triggered when the browser is loading a media element.
+	seeked: Triggered when a seek operation on a media element finishes.
+	seeking: Triggered when a seek operation starts on a media element.
+
+Animation and Transition Events:
+	animationstart: Triggered when a CSS animation starts.
+	animationend: Triggered when a CSS animation ends.
+	animationiteration: Triggered when a CSS animation iteration ends.
+	transitionstart: Triggered when a CSS transition starts.
+	transitionend: Triggered when a CSS transition ends.
+	transitioncancel: Triggered if a CSS transition is canceled before it completes.
+
+Focus Events:
+	focusin: Triggered when an element or any of its descendants receives focus (bubbles).
+	focusout: Triggered when an element or any of its descendants loses focus (bubbles).
+
+Other Event Types:
+	hashchange: Triggered when the URL fragment identifier (the part of the URL after #) changes.
+	popstate: Triggered when the active history entry changes (i.e., the state of the browser’s session history).
+	message: Triggered when a message is received from another window or an iframe.
+	error: Triggered when an error occurs (e.g., failed to load a resource like an image).
+	focus: Triggered when an element gains focus.
+	visibilitychange: Triggered when the visibility state of the document changes (for example, when the page is hidden or visible).
+	storage: Triggered when a change is made to localStorage or sessionStorage.
+
+Event Propagation Methods:
+	stopPropagation: Prevents further propagation of the current event in the capturing and bubbling phases.
+	stopImmediatePropagation: Prevents other listeners of the same event from being called.
+	preventDefault: Prevents the default action associated with the event (e.g., navigating to a link).
+
+Mouse Wheel Events:
+	wheel: Triggered when the mouse wheel is used (to scroll).
+	Pointer Lock API Events:
+	pointerlockchange: Triggered when the pointer lock state changes.
+	pointerlockerror: Triggered if there is an error trying to lock the pointer.
+	
+
+
+
+
+
+
 		
 		
 	

@@ -1,6 +1,6 @@
 function callDemo1() {
 
-    const attrs = document.querySelector("div").attributes.id.value;
+    const attrs = document.querySelector("div").attributes.id;
     console.log(attrs);
 
     const idVal = document.querySelector("div").attributes.id.value;
