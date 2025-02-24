@@ -816,5 +816,37 @@ dog.bark();   // Output: Woof!
 
 
 
+SetInterval() clearInterval();
+==============================
+Syntax:
+	setInterval(functionName,milliseconds)
+	clearInterval(functionName);
 
+let animation = setInterval(sampleAnimationFun, 1000);
+let a = 0;
+
+function sampleAnimationFun() {
+
+    console.log("Called");
+    const titleId = document.getElementById("titleId");
+    a += 1;
+    if (a >= 5) {
+        clearInterval(animation);
+    } else {
+        titleId.style.fontSize = a + "rem";
+
+    }
+
+}
+
+
+Syntax:
+	setTimeOut(functionName,milliseconds);
+	clearTimeOut(functionName);
+
+
+
+VS Code Editor:
+	Keyboard shortcuts.
+	
 
