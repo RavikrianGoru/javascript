@@ -567,6 +567,44 @@ Mouse Wheel Events:
 	pointerlockchange: Triggered when the pointer lock state changes.
 	pointerlockerror: Triggered if there is an error trying to lock the pointer.
 	
+Date object and its methods:
+
+
+Date object methods:
+--------------------
+
+let currDate = new Date();
+	currDate.getDate(): 24
+	currDate.getTime(): 1740358451873
+	currDate.getFullYear() 2025
+	currDate.getMonth() month starts with 0 indexes: 1
+	currDate.getDay() 1
+	currDate.getHours(): 6
+	currDate.getMinutes(): 24
+	currDate.getSeconds(): 11
+	currDate.getMilliseconds(): 873
+	currDate.toLocaleDateString(): 2/24/2025
+
+let specificDate = new Date("2025-02-24T10:00:01");
+	Specified Date: Mon Feb 24 2025 10:00:01 GMT+0530 (India Standard Time)
+
+
+// Run a function after 3 seconds
+	setTimeout(() => {
+    	console.log("3 seconds passed");
+	}, 3000);
+
+// Run a function every 1 seconds
+	setInterval(() => {
+    	console.log("2 seconds passed");
+    	dateId.textContent = new Date();
+	}, 1000);
+
+
+DOM classList:
+-------------
+The classList property in JavaScript allows you to work with the classes of an HTML element. 
+It provides several useful methods to add, remove, toggle, and check for classes.
 
 
 
