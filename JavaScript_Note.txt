@@ -737,7 +737,84 @@ You can also use hasOwnProperty() to check if the property belongs to the object
 console.log(person.hasOwnProperty("name"));  // Output: true
 console.log(person.hasOwnProperty("gender"));  // Output: false
 
-	
-	
+Inheritance 
+===========
+In JavaScript, inheritance allows one object to inherit properties and methods from another. There are several ways to achieve inheritance, depending on the style you're using. The main approaches are:
+
+
+1. Prototype-Based Inheritance (Old method)
+------------------------------------------
+// Parent object
+let animal = {
+    species: "Unknown",
+    greet() {
+        console.log(`Hello, I am a ${this.species}`);
+    }
+};
+
+// Child object inheriting from animal
+let dog = Object.create(animal);
+dog.species = "Dog";
+dog.bark = function() {
+    console.log("Woof!");
+};
+
+dog.greet();  // Output: Hello, I am a Dog
+dog.bark();   // Output: Woof!
+
+2. Class-Based Inheritance (ES6 class syntax)
+--------------------------------------------
+// Parent class
+class Animal {
+    constructor(species) {
+        this.species = species || "Unknown";
+    }
+
+    greet() {
+        console.log(`Hello, I am a ${this.species}`);
+    }
+}
+
+// Child class inheriting from Animal
+class Dog extends Animal {
+    constructor() {
+        super("Dog");  // Call parent constructor with "Dog"
+    }
+
+    bark() {
+        console.log("Woof!");
+    }
+}
+
+let myDog = new Dog();
+myDog.greet();  // Output: Hello, I am a Dog
+myDog.bark();   // Output: Woof!
+
+3. Using Object.setPrototypeOf() (Alternative to Object.create())
+----------------------------------------------------------------
+// Parent object
+let animal = {
+    species: "Unknown",
+    greet() {
+        console.log(`Hello, I am a ${this.species}`);
+    }
+};
+
+// Child object
+let dog = {
+    bark() {
+        console.log("Woof!");
+    }
+};
+
+// Setting prototype of dog to animal
+Object.setPrototypeOf(dog, animal);
+
+dog.species = "Dog";
+dog.greet();  // Output: Hello, I am a Dog
+dog.bark();   // Output: Woof!
+
+
+
 
 

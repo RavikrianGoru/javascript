@@ -13,7 +13,8 @@ let person = {
         city: "hyd",
         zip: "50032"
     }
-}
+};
+
 console.log(person);
 console.log("Access Person name through . notation:" + person.name);
 console.log("Access Person name through [] notation:" + person["name"]);
