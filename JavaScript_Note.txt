@@ -845,8 +845,121 @@ Syntax:
 	clearTimeOut(functionName);
 
 
+JavaScript Collections:	
+	collections refer to data structures that hold multiple values. The most common collections in JavaScript are arrays and objects, but JavaScript also offers some more specialized collections such as Set, Map, WeakSet, and WeakMap.
 
-VS Code Editor:
-	Keyboard shortcuts.
+1. Array
+An array is an ordered collection of elements. Arrays can hold values of any type, including numbers, strings, objects, or even other arrays.
+
+	let fruits = ['apple', 'banana', 'orange'];
+
+
+	// Accessing elements
+	console.log(fruits[0]); // apple
+
+	// Adding elements
+	fruits.push('grape');
+	console.log(fruits); // ['apple', 'banana', 'orange', 'grape']
+
+	// Iterating over an array
+	fruits.forEach(fruit => {
+	    console.log(fruit);
+	});
+
+2. Object
+An object is an unordered collection of key-value pairs. It is the most common collection used for storing data in JavaScript, especially when you need to represent entities with properties.
+
+	let person = {
+	    name: "John",
+	    age: 30,
+	    city: "New York"
+	};
+
+	// Accessing properties
+	console.log(person.name); // John
+
+	// Modifying properties
+	person.age = 31;
+	console.log(person.age); // 31
+
+	// Adding new properties
+	person.country = "USA";
+	console.log(person.country); // USA
+
+3. Set
+A Set is a collection of unique values. It can hold any type of value, but duplicates are automatically removed. Sets are commonly used when you want to ensure that there are no duplicates in a collection.
+
+	let numbers = new Set();
+
+	// Adding values to a Set
+	numbers.add(1);
+	numbers.add(2);
+	numbers.add(3);
+	numbers.add(3);  // Duplicate, will be ignored
+
+	console.log(numbers);  // Set { 1, 2, 3 }
+
+	// Checking if a value exists
+	console.log(numbers.has(2)); // true
+	console.log(numbers.has(5)); // false
+
+	// Iterating over a Set
+	numbers.forEach(num => {
+	    console.log(num);
+	});
+
+4. Map
+A Map is a collection of key-value pairs where both keys and values can be any type (unlike objects, which only allow strings as keys). Maps maintain the order of their elements and allow easy retrieval, insertion, and deletion of key-value pairs.
+
+	let map = new Map();
+
+	// Adding key-value pairs to a Map
+	map.set("name", "John");
+	map.set("age", 30);
+	map.set("city", "New York");
+
+	console.log(map);  // Map { 'name' => 'John', 'age' => 30, 'city' => 'New York' }
+
+	// Accessing a value by key
+	console.log(map.get("name")); // John
+
+	// Checking if a key exists
+	console.log(map.has("age"));  // true
+	console.log(map.has("country"));  // false
+
+	// Iterating over a Map
+	map.forEach((value, key) => {
+	    console.log(key + ": " + value);
+	});
+
+5. WeakSet
+A WeakSet is similar to a Set, but its values must be objects, and it holds weak references to the objects. This means that if there are no other references to the object, it can be garbage collected. WeakSet does not allow iteration over its elements.
+
+	let weakSet = new WeakSet();
+
+	let obj1 = {};
+	let obj2 = {};
+
+	weakSet.add(obj1);
+	weakSet.add(obj2);
+
+	console.log(weakSet.has(obj1)); // true
+
+	// WeakSet does not allow primitive values or iteration
+	// weakSet.add(3); // TypeError: Invalid value used in weak set
+
+6. WeakMap
+A WeakMap is similar to a Map, but its keys must be objects, and it holds weak references to the keys. Just like WeakSet, if there are no other references to the key, it can be garbage collected.
+
+	let weakMap = new WeakMap();
 	
-
+	let obj1 = {};
+	let obj2 = {};
+	
+	weakMap.set(obj1, "Object 1");
+	weakMap.set(obj2, "Object 2");
+	
+	console.log(weakMap.get(obj1)); // Object 1
+	
+	// WeakMap does not allow primitive keys
+	// weakMap.set(3, "Number"); // TypeError: Invalid value used as weak map key
